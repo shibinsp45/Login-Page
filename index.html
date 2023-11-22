@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Login Page</title>
+    <!-- bs -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body class="bg-black">
+    <div class="container bg-light mt-5 p-5 border-0 rounded">
+        <h2 class="text-center mb-5">Login Page</h2>
+        <div class="row">
+            <div class="col-6 d-flex justify-content-center border-0">
+                <img src="https://img.freepik.com/free-vector/access-control-system-abstract-concept_335657-3180.jpg?size=626&ext=jpg&ga=GA1.1.1249625304.1696399331&semt=sph"
+                    class="img border rounded" alt="" style="background-color: red; width: 500px; height: 500px;">
+            </div>
+            <div class="col-6 mt-7 border rounded">
+                <label class="mt-5 font-weight-bold" for="username">Username:</label>
+                <input placeholder="Enter your username:" type="text" class="form-control" id="username">
+
+                <label class="mt-2 font-weight-bold" for="password">Password:</label>
+                <input placeholder="Enter your password:" type="password" class="form-control" id="password">
+
+                <div class="d-flex flex-column m-1 p-5">
+                    <button class="btn btn-outline-success mb-4 me-4" type="button"
+                        onclick="loginclick()">Login</button>
+                    <button type="button" class="btn btn-danger me-4">Forgot password?</button>
+
+                    <h5 id="info" class="text-center color-info font-weight-bold mt-4"></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>

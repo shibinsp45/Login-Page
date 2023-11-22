@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+       <!-- bs -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div style="height: 100vh;">
+        <nav class="navbar bg-light">
+            <img src="https://img.freepik.com/free-vector/butterfly-logo-colorful-gradient-illustrations_483537-972.jpg?size=626&ext=jpg&ga=GA1.1.1249625304.1696399331&semt=sph"  style="width: 70px;" srcset="">
+            <h3>Hai <span id="navname"> username</span> </h3>
+            <div class="ms-auto">
+                <button class="btn btn-outline-danger " onclick="logout()">Logout</button>
+            </div>
+        </nav>
+        <main class="border " style="height: 80vh;">
+            <section class="container">
+                <div class="text-center mt-5" style=" font-size: 100px;" id="melcow">
+                    Welcome <span class="text-primary " id="usname"> Username</span>
+                    
+                </div>
+                <p class="text-center mt-5 display-4 font-weight-light">Explore the  dynamic login page and dashboard created using javascript  </p>
+            </section>
+        </main>
+    </div>
+</body>
+<script>
+    const usrname = localStorage.getItem("username")
+    if(usrname){
+        usname.innerHTML = usrname
+    }
+    if (
+        navname.innerHTML = usrname
+    ) {
+        
+    } else {
+        
+    }
+    const logout = () =>{
+        localStorage.removeItem("username")
+        window.location.href = "index.html"
+    }
+</script>
+</html>
